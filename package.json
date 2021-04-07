@@ -1,7 +1,7 @@
 {
-  "name": "pourfaireunsearchtemplate",
+  "name": "sposearchtemplate",
   "version": "1.0.0",
-  "description": "sharepointonline template",
+  "description": "Search Template for sharepoint online",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -16,5 +16,9 @@
   "resolutions": {
     "@babel/preset-env": "7.13.8"
   },
-  "keywords": []
+  "keywords": [
+    "search ",
+    "spo",
+    "sharepoint online"
+  ]
 }
