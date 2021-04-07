@@ -12,6 +12,7 @@
     .thumbnail {
       width: 280px;
       height: 280px;
+      object-fit: cover;
     }
 
     .metadonnees {
@@ -25,8 +26,8 @@
     .metadonnee {
       display: inline-block;
       background-color: white;
-      margin: 10px 5px;
-      padding: 10px 20px;
+      margin: 5px 2px;
+      padding: 5px 12px;
       border-radius: 20px;
     }
 
@@ -73,10 +74,14 @@
       <div class="document-card-container">
         {{#each items as |item|}}
         <div class="card">
+          {{#if RefinableString105}}
+          <img class="thumbnail" src="{{RefinableString105}}" />
+          {{else}}
           <img
             class="thumbnail"
             src="https://loreal.sharepoint.com/sites/one-retail-education/_layouts/15/getpreview.ashx?path={{DefaultEncodingURL}}"
           />
+          {{/if}}
           <div class="metadonnees">
             {{#if RefinableString100}}
             <div class="metadonnee">{{RefinableString100}}</div>
