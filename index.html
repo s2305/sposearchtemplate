@@ -51,6 +51,12 @@
       display: inline-block;
       position: absolute;
       line-height: 70px;
+      text-overflow: ellipsis;
+
+/* Required for text-overflow to do anything */
+      white-space: nowrap;
+      overflow: hidden;
+      width:200px;
     }
 
     .customfooter .bt {
